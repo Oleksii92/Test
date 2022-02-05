@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             print("after exactly 2 second we do nothing")
+            print("Besh is better then ZCH")
         }
     }
 

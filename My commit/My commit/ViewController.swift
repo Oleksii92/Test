@@ -9,11 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    view.backgroundColor = .white
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            print("after exactly 2 second we do nothing")
+        }
     }
 
 
